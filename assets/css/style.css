@@ -868,6 +868,16 @@
             gap: 8px;
         }
         .branch-address i { color: var(--secondary); margin-top: 3px; flex-shrink: 0; }
+        .branch-map-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            margin: -14px 0 22px;
+        }
+        .branch-map-link:hover { color: var(--secondary); }
         .branch-contacts { border-top: 1px solid var(--border); padding-top: 18px; }
         .branch-contacts h4 {
             font-size: 12px;
