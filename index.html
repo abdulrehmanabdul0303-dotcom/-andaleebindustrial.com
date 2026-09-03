@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Andaleeb Industrial Company - Professional Refrigeration, Cooling & Industrial Services in Saudi Arabia since 2021.">
     <meta name="keywords" content="Refrigeration Saudi Arabia, Cold Room Services, Transport Cooling, Industrial Cooling, Thermo King, Carrier, Andaleeb Industrial">
-    <title>Andaleeb Industrial Company | Refrigeration, Cooling & Industrial Services KSA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title data-i18n="meta.title">Andaleeb Industrial Company | Refrigeration, Cooling & Industrial Services KSA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -17,7 +17,11 @@
         <div class="container">
             <span><i class="fas fa-envelope"></i> info@andaleeb-industrial.com</span>
             <span><i class="fas fa-phone"></i> +966 57 079 7399</span>
-            <span><i class="fas fa-clock"></i> 24/7 Emergency Support Available</span>
+            <span class="topbar-hide-sm"><i class="fas fa-clock"></i> <span data-i18n="topbar.emergency">24/7 Emergency Support Available</span></span>
+            <span class="lang-switch">
+                <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="ar">AR</button>
+            </span>
         </div>
     </div>
 
@@ -26,19 +30,19 @@
             <a href="#home" class="logo">
                 <img src="assets/images/logo.png" alt="Andaleeb" class="logo-img">
                 <div class="logo-text">
-                    <h1>INDUSTRIAL</h1>
-                    <p>Refrigeration, Cooling & Industrial Services</p>
+                    <h1 data-i18n="logo.industrial">INDUSTRIAL</h1>
+                    <p data-i18n="logo.tagline">Refrigeration, Cooling & Industrial Services</p>
                 </div>
             </a>
             <nav class="nav" id="mainNav">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#team">Team</a>
-                <a href="#branches">Branches</a>
-                <a href="#clients">Clients</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active" data-i18n="nav.home">Home</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+                <a href="#team" data-i18n="nav.team">Team</a>
+                <a href="#branches" data-i18n="nav.branches">Branches</a>
+                <a href="#clients" data-i18n="nav.clients">Clients</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
             </nav>
             <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
         </div>
@@ -50,23 +54,23 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-left fade-up">
-                <h2>Reliable <span>Refrigeration</span> & Cooling Solutions for Saudi Industries</h2>
-                <p>Andaleeb Industrial Company delivers professional refrigeration systems, cold rooms, and transport cooling services across the Kingdom of Saudi Arabia. Established in 2021, we ensure uninterrupted cold-chain operations.</p>
+                <h2 data-i18n-html="hero.title">Reliable <span>Refrigeration</span> & Cooling Solutions for Saudi Industries</h2>
+                <p data-i18n="hero.desc">Andaleeb Industrial Company delivers professional refrigeration systems, cold rooms, and transport cooling services across the Kingdom of Saudi Arabia. Established in 2021, we ensure uninterrupted cold-chain operations.</p>
                 <div class="hero-badges">
-                    <span class="hero-badge"><i class="fas fa-check-circle"></i> 24/7 Support</span>
-                    <span class="hero-badge"><i class="fas fa-check-circle"></i> KSA Wide</span>
-                    <span class="hero-badge"><i class="fas fa-check-circle"></i> Certified Technicians</span>
+                    <span class="hero-badge"><i class="fas fa-check-circle"></i> <span data-i18n="hero.badge1">24/7 Support</span></span>
+                    <span class="hero-badge"><i class="fas fa-check-circle"></i> <span data-i18n="hero.badge2">KSA Wide</span></span>
+                    <span class="hero-badge"><i class="fas fa-check-circle"></i> <span data-i18n="hero.badge3">Certified Technicians</span></span>
                 </div>
                 <div>
-                    <a href="#contact" class="btn-primary"><i class="fas fa-bolt"></i> Get Emergency Support</a>
-                    <a href="#services" class="btn-outline"><i class="fas fa-arrow-right"></i> Explore Services</a>
+                    <a href="#contact" class="btn-primary"><i class="fas fa-bolt"></i> <span data-i18n="hero.btn1">Get Emergency Support</span></a>
+                    <a href="#services" class="btn-outline"><i class="fas fa-arrow-right"></i> <span data-i18n="hero.btn2">Explore Services</span></a>
                 </div>
             </div>
             <div class="hero-right fade-up delay-2">
                 <div class="hero-card">
                     <div class="hero-card-img"><img src="assets/images/hero-card-industrial-welding.jpg" alt="Industrial Welding"></div>
-                    <h3>Andaleeb Industrial</h3>
-                    <p>Your trusted partner for industrial refrigeration and cooling across Saudi Arabia</p>
+                    <h3 data-i18n="hero.cardTitle">Andaleeb Industrial</h3>
+                    <p data-i18n="hero.cardDesc">Your trusted partner for industrial refrigeration and cooling across Saudi Arabia</p>
                 </div>
             </div>
         </div>
@@ -79,22 +83,22 @@
                 <div class="stat-item fade-up">
                     <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
                     <div class="stat-number" data-target="2021">0</div>
-                    <div class="stat-label">Established Since</div>
+                    <div class="stat-label" data-i18n="stats.label1">Established Since</div>
                 </div>
                 <div class="stat-item fade-up delay-1">
                     <div class="stat-icon"><i class="fas fa-tools"></i></div>
                     <div class="stat-number" data-target="500">0+</div>
-                    <div class="stat-label">Repairs Completed</div>
+                    <div class="stat-label" data-i18n="stats.label2">Repairs Completed</div>
                 </div>
                 <div class="stat-item fade-up delay-2">
                     <div class="stat-icon"><i class="fas fa-building"></i></div>
                     <div class="stat-number" data-target="3">0</div>
-                    <div class="stat-label">Branches in KSA</div>
+                    <div class="stat-label" data-i18n="stats.label3">Branches in KSA</div>
                 </div>
                 <div class="stat-item fade-up delay-3">
                     <div class="stat-icon"><i class="fas fa-smile"></i></div>
                     <div class="stat-number" data-target="100">0%</div>
-                    <div class="stat-label">Client Satisfaction</div>
+                    <div class="stat-label" data-i18n="stats.label4">Client Satisfaction</div>
                 </div>
             </div>
         </div>
@@ -106,21 +110,21 @@
             <div class="about-images fade-left">
                 <div class="about-img-main"><img src="assets/images/about-main-photo.png" alt="About Andaleeb Industrial"></div>
                 <div class="about-img-sub"><img src="assets/images/about-sub-laser-cutting.png" alt="Laser Cutting Capabilities"></div>
-                <div class="about-img-badge"><div class="num">2021</div><div class="txt">Established</div></div>
+                <div class="about-img-badge"><div class="num">2021</div><div class="txt" data-i18n="about.badge">Established</div></div>
             </div>
             <div class="about-content fade-right">
-                <h2>About Andaleeb Industrial Company</h2>
+                <h2 data-i18n="about.title">About Andaleeb Industrial Company</h2>
                 <div class="section-line" style="margin:0 0 20px;"></div>
-                <p>Andaleeb Industrial Company is a fast-growing and professionally managed industrial refrigeration and cooling services provider based in the Kingdom of Saudi Arabia.</p>
-                <p>Established in 2021, the company has carved a strong presence in the field of refrigeration systems, cold rooms, and temperature-controlled solutions, catering to businesses where uninterrupted cold-chain operations are critical.</p>
-                <p>We deliver reliable maintenance, repair, and emergency support services with skilled technicians, strong safety practices, and a customer-first approach.</p>
+                <p data-i18n="about.p1">Andaleeb Industrial Company is a fast-growing and professionally managed industrial refrigeration and cooling services provider based in the Kingdom of Saudi Arabia.</p>
+                <p data-i18n="about.p2">Established in 2021, the company has carved a strong presence in the field of refrigeration systems, cold rooms, and temperature-controlled solutions, catering to businesses where uninterrupted cold-chain operations are critical.</p>
+                <p data-i18n="about.p3">We deliver reliable maintenance, repair, and emergency support services with skilled technicians, strong safety practices, and a customer-first approach.</p>
                 <div class="about-features">
-                    <div class="about-feature"><i class="fas fa-snowflake"></i><span>Refrigeration Systems</span></div>
-                    <div class="about-feature"><i class="fas fa-warehouse"></i><span>Cold Room Solutions</span></div>
-                    <div class="about-feature"><i class="fas fa-truck"></i><span>Transport Cooling</span></div>
-                    <div class="about-feature"><i class="fas fa-headset"></i><span>24/7 Emergency Support</span></div>
-                    <div class="about-feature"><i class="fas fa-shield-alt"></i><span>Safety First Approach</span></div>
-                    <div class="about-feature"><i class="fas fa-users"></i><span>Skilled Technicians</span></div>
+                    <div class="about-feature"><i class="fas fa-snowflake"></i><span data-i18n="about.f1">Refrigeration Systems</span></div>
+                    <div class="about-feature"><i class="fas fa-warehouse"></i><span data-i18n="about.f2">Cold Room Solutions</span></div>
+                    <div class="about-feature"><i class="fas fa-truck"></i><span data-i18n="about.f3">Transport Cooling</span></div>
+                    <div class="about-feature"><i class="fas fa-headset"></i><span data-i18n="about.f4">24/7 Emergency Support</span></div>
+                    <div class="about-feature"><i class="fas fa-shield-alt"></i><span data-i18n="about.f5">Safety First Approach</span></div>
+                    <div class="about-feature"><i class="fas fa-users"></i><span data-i18n="about.f6">Skilled Technicians</span></div>
                 </div>
             </div>
         </div>
@@ -130,14 +134,14 @@
     <section class="intro section-padding">
         <div class="container">
             <div class="intro-content fade-left">
-                <h2>Industrial Capabilities & Infrastructure</h2>
+                <h2 data-i18n="intro.title">Industrial Capabilities & Infrastructure</h2>
                 <div class="section-line" style="margin:0 0 20px;"></div>
-                <p>Our state-of-the-art workshop facilities and advanced diagnostic equipment enable us to handle complex industrial refrigeration challenges across the Kingdom. From precision laser-guided fabrication to heavy-duty welding, we maintain the highest standards.</p>
-                <p>We specialize in Thermo King and Carrier unit overhauls, cold room panel fabrication, and custom transport cooling modifications for the harsh Saudi climate.</p>
+                <p data-i18n="intro.p1">Our state-of-the-art workshop facilities and advanced diagnostic equipment enable us to handle complex industrial refrigeration challenges across the Kingdom. From precision laser-guided fabrication to heavy-duty welding, we maintain the highest standards.</p>
+                <p data-i18n="intro.p2">We specialize in Thermo King and Carrier unit overhauls, cold room panel fabrication, and custom transport cooling modifications for the harsh Saudi climate.</p>
                 <div class="intro-stats">
-                    <div class="intro-stat"><h4>50+</h4><p>Expert Technicians</p></div>
-                    <div class="intro-stat"><h4>3</h4><p>Service Branches</p></div>
-                    <div class="intro-stat"><h4>24/7</h4><p>Emergency Response</p></div>
+                    <div class="intro-stat"><h4>50+</h4><p data-i18n="intro.s1">Expert Technicians</p></div>
+                    <div class="intro-stat"><h4>3</h4><p data-i18n="intro.s2">Service Branches</p></div>
+                    <div class="intro-stat"><h4>24/7</h4><p data-i18n="intro.s3">Emergency Response</p></div>
                 </div>
             </div>
             <div class="intro-image fade-right">
@@ -153,13 +157,13 @@
                 <img src="assets/images/ceo-founder-alauddin.png" alt="Founder Alauddin">
             </div>
             <div class="ceo-content fade-right">
-                <h2>Message from the <span>Founder</span></h2>
-                <p class="ceo-quote">"At Andaleeb Industrial Company, our journey began with a clear vision to provide reliable, efficient, and professional refrigeration and cooling services that industries can truly depend on."</p>
-                <p>Since our establishment in 2021, we have focused on building strong technical capabilities, skilled manpower, and ethical work practices. I strongly believe that quality service, safety, and customer satisfaction are the foundations of long-term success.</p>
-                <p>Every project we undertake reflects our commitment to technical excellence, timely execution, and transparent business relationships. As we continue to grow across Saudi Arabia, our goal remains the same: to support our clients' operations with dependable cold-chain solutions while contributing positively to the Kingdom's industrial development.</p>
+                <h2 data-i18n-html="ceo.title">Message from the <span>Founder</span></h2>
+                <p class="ceo-quote" data-i18n="ceo.quote">"At Andaleeb Industrial Company, our journey began with a clear vision to provide reliable, efficient, and professional refrigeration and cooling services that industries can truly depend on."</p>
+                <p data-i18n="ceo.p1">Since our establishment in 2021, we have focused on building strong technical capabilities, skilled manpower, and ethical work practices. I strongly believe that quality service, safety, and customer satisfaction are the foundations of long-term success.</p>
+                <p data-i18n="ceo.p2">Every project we undertake reflects our commitment to technical excellence, timely execution, and transparent business relationships. As we continue to grow across Saudi Arabia, our goal remains the same: to support our clients' operations with dependable cold-chain solutions while contributing positively to the Kingdom's industrial development.</p>
                 <div class="ceo-signature">
                     <div class="ceo-signature-avatar">A</div>
-                    <div><h4>Alauddin</h4><p>Founder & Owner, Andaleeb Industrial Company</p></div>
+                    <div><h4>Alauddin</h4><p data-i18n="ceo.role">Founder & Owner, Andaleeb Industrial Company</p></div>
                 </div>
             </div>
         </div>
@@ -169,20 +173,20 @@
     <section class="mission-vision section-padding">
         <div class="container">
             <div class="section-header fade-up">
-                <h2 style="color:var(--white);">Mission & Vision</h2>
+                <h2 style="color:var(--white);" data-i18n="mv.title">Mission & Vision</h2>
                 <div class="section-line" style="background:linear-gradient(90deg, var(--secondary), var(--accent));"></div>
-                <p style="color:rgba(255,255,255,0.7);">Guiding principles that drive our commitment to excellence</p>
+                <p style="color:rgba(255,255,255,0.7);" data-i18n="mv.subtitle">Guiding principles that drive our commitment to excellence</p>
             </div>
             <div class="mv-grid">
                 <div class="mv-card fade-up">
                     <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to deliver high-quality, reliable, and timely refrigeration and cooling services that ensure uninterrupted cold-chain operations for our clients. We are committed to continuous improvement through skilled manpower, strict safety standards, and the use of proven technologies, while building long-term partnerships based on trust, performance, and customer satisfaction.</p>
+                    <h3 data-i18n="mv.missionTitle">Our Mission</h3>
+                    <p data-i18n="mv.missionText">Our mission is to deliver high-quality, reliable, and timely refrigeration and cooling services that ensure uninterrupted cold-chain operations for our clients. We are committed to continuous improvement through skilled manpower, strict safety standards, and the use of proven technologies, while building long-term partnerships based on trust, performance, and customer satisfaction.</p>
                 </div>
                 <div class="mv-card fade-up delay-2">
                     <div class="mv-icon"><i class="fas fa-eye"></i></div>
-                    <h3>Our Vision</h3>
-                    <p>To become a leading and trusted industrial refrigeration service provider in Saudi Arabia, recognized for technical excellence, reliability, safety, and customer-centric solutions that support the growth of the Kingdom's industrial and logistics sectors.</p>
+                    <h3 data-i18n="mv.visionTitle">Our Vision</h3>
+                    <p data-i18n="mv.visionText">To become a leading and trusted industrial refrigeration service provider in Saudi Arabia, recognized for technical excellence, reliability, safety, and customer-centric solutions that support the growth of the Kingdom's industrial and logistics sectors.</p>
                 </div>
             </div>
         </div>
@@ -192,31 +196,31 @@
     <section class="culture section-padding">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our Culture & Values</h2>
+                <h2 data-i18n="culture.title">Our Culture & Values</h2>
                 <div class="section-line"></div>
-                <p>The principles that define how we work and serve our clients every day</p>
+                <p data-i18n="culture.subtitle">The principles that define how we work and serve our clients every day</p>
             </div>
             <div class="culture-grid">
                 <div class="culture-card fade-up">
                     <div class="culture-card-img"><img src="assets/images/culture-customer-first.png" alt="Customer is King"></div>
-                    <h3>Customer First</h3>
-                    <p>We place our clients at the center of everything we do, ensuring their operations never stop because of cooling failures.</p>
+                    <h3 data-i18n="culture.c1Title">Customer First</h3>
+                    <p data-i18n="culture.c1Text">We place our clients at the center of everything we do, ensuring their operations never stop because of cooling failures.</p>
                 </div>
                 <div class="culture-card fade-up delay-1">
                     <div class="culture-card-img"><img src="assets/images/culture-commitment-quality.jpg" alt="Commitment to Quality"></div>
-                    <h3>Commitment to Quality</h3>
-                    <p>Our team is dedicated to delivering workmanship that meets the highest industry standards on every single project.</p>
+                    <h3 data-i18n="culture.c2Title">Commitment to Quality</h3>
+                    <p data-i18n="culture.c2Text">Our team is dedicated to delivering workmanship that meets the highest industry standards on every single project.</p>
                 </div>
                 <div class="culture-card fade-up delay-2">
                     <div class="culture-card-img" style="background:linear-gradient(135deg, var(--primary), var(--secondary)); display:flex; align-items:center; justify-content:center;">
                         <i class="fas fa-handshake" style="font-size:64px; color:rgba(255,255,255,0.3);"></i>
                     </div>
-                    <h3>Integrity & Trust</h3>
-                    <p>Transparent pricing, honest assessments, and ethical business practices form the foundation of our client relationships.</p>
+                    <h3 data-i18n="culture.c3Title">Integrity & Trust</h3>
+                    <p data-i18n="culture.c3Text">Transparent pricing, honest assessments, and ethical business practices form the foundation of our client relationships.</p>
                 </div>
             </div>
             <div class="culture-icons fade-up">
-                <h3>Our Core Culture Pillars</h3>
+                <h3 data-i18n="culture.pillars">Our Core Culture Pillars</h3>
                 <img src="assets/images/culture-core-pillars.png" alt="Culture Icons - Purpose, Appreciation, Success, Opportunity, Well-being">
             </div>
         </div>
@@ -226,60 +230,60 @@
     <section class="services section-padding" id="services">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our Services</h2>
+                <h2 data-i18n="services.title">Our Services</h2>
                 <div class="section-line"></div>
-                <p>Comprehensive refrigeration and cooling solutions for your business</p>
+                <p data-i18n="services.subtitle">Comprehensive refrigeration and cooling solutions for your business</p>
             </div>
             <div class="services-grid">
                 <div class="service-card fade-up">
                     <div class="service-image"><img src="assets/images/service-repair-maintenance.jpg" alt="Refrigerator Repair & Maintenance"></div>
                     <div class="service-content">
-                        <h3>Refrigerator Repair & Maintenance</h3>
-                        <p>Professional repair and preventive maintenance for commercial and industrial refrigeration systems to ensure reliable performance and extended equipment life.</p>
+                        <h3 data-i18n="service1.title">Refrigerator Repair & Maintenance</h3>
+                        <p data-i18n="service1.text">Professional repair and preventive maintenance for commercial and industrial refrigeration systems to ensure reliable performance and extended equipment life.</p>
                         <ul>
-                            <li><i class="fas fa-chevron-right"></i> Commercial fridge repair</li>
-                            <li><i class="fas fa-chevron-right"></i> Industrial unit servicing</li>
-                            <li><i class="fas fa-chevron-right"></i> Preventive maintenance plans</li>
-                            <li><i class="fas fa-chevron-right"></i> Compressor diagnostics</li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service1.li1">Commercial fridge repair</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service1.li2">Industrial unit servicing</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service1.li3">Preventive maintenance plans</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service1.li4">Compressor diagnostics</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="service-card fade-up delay-1">
                     <div class="service-image"><img src="assets/images/service-cold-room-truck.png" alt="Cold Room Services"></div>
                     <div class="service-content">
-                        <h3>Cold Room Services</h3>
-                        <p>Complete cold room repair, servicing, and temperature control system maintenance, including compressors, condensers, and evaporators.</p>
+                        <h3 data-i18n="service2.title">Cold Room Services</h3>
+                        <p data-i18n="service2.text">Complete cold room repair, servicing, and temperature control system maintenance, including compressors, condensers, and evaporators.</p>
                         <ul>
-                            <li><i class="fas fa-chevron-right"></i> Cold room installation</li>
-                            <li><i class="fas fa-chevron-right"></i> Temperature calibration</li>
-                            <li><i class="fas fa-chevron-right"></i> Insulation repair</li>
-                            <li><i class="fas fa-chevron-right"></i> Panel & door servicing</li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service2.li1">Cold room installation</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service2.li2">Temperature calibration</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service2.li3">Insulation repair</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service2.li4">Panel & door servicing</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="service-card fade-up">
                     <div class="service-image"><img src="assets/images/service-transport-trailers.jpg" alt="Transport Refrigeration Systems"></div>
                     <div class="service-content">
-                        <h3>Transport Refrigeration Systems</h3>
-                        <p>Maintenance and repair of vehicle-mounted refrigeration units to support uninterrupted cold-chain transportation across the Kingdom.</p>
+                        <h3 data-i18n="service3.title">Transport Refrigeration Systems</h3>
+                        <p data-i18n="service3.text">Maintenance and repair of vehicle-mounted refrigeration units to support uninterrupted cold-chain transportation across the Kingdom.</p>
                         <ul>
-                            <li><i class="fas fa-chevron-right"></i> Truck unit repair</li>
-                            <li><i class="fas fa-chevron-right"></i> Reefer container service</li>
-                            <li><i class="fas fa-chevron-right"></i> Fleet maintenance contracts</li>
-                            <li><i class="fas fa-chevron-right"></i> Mobile cooling solutions</li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service3.li1">Truck unit repair</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service3.li2">Reefer container service</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service3.li3">Fleet maintenance contracts</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service3.li4">Mobile cooling solutions</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="service-card fade-up delay-1">
                     <div class="service-image"><img src="assets/images/service-emergency-van.jpg" alt="Emergency Breakdown Support"></div>
                     <div class="service-content">
-                        <h3>Emergency Breakdown Support</h3>
-                        <p>Fast-response on-site diagnostics and efficient repairs to minimize downtime and operational losses for your critical cooling systems.</p>
+                        <h3 data-i18n="service4.title">Emergency Breakdown Support</h3>
+                        <p data-i18n="service4.text">Fast-response on-site diagnostics and efficient repairs to minimize downtime and operational losses for your critical cooling systems.</p>
                         <ul>
-                            <li><i class="fas fa-chevron-right"></i> 24/7 emergency hotline</li>
-                            <li><i class="fas fa-chevron-right"></i> Rapid on-site response</li>
-                            <li><i class="fas fa-chevron-right"></i> Temporary cooling solutions</li>
-                            <li><i class="fas fa-chevron-right"></i> Full system restoration</li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service4.li1">24/7 emergency hotline</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service4.li2">Rapid on-site response</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service4.li3">Temporary cooling solutions</span></li>
+                            <li><i class="fas fa-chevron-right"></i> <span data-i18n="service4.li4">Full system restoration</span></li>
                         </ul>
                     </div>
                 </div>
@@ -294,16 +298,16 @@
                 <img src="assets/images/quality-assurance-framework.png" alt="Quality Assurance Framework">
             </div>
             <div class="quality-content fade-right">
-                <h2>Quality Assurance</h2>
+                <h2 data-i18n="quality.title">Quality Assurance</h2>
                 <div class="section-line" style="margin:0 0 20px;"></div>
-                <p>At Andaleeb Industrial, quality is not just a process — it is a mindset embedded in every level of our organization. Our Quality Assurance framework ensures that every service we deliver meets the highest standards of safety, reliability, and performance.</p>
-                <p>From initial diagnostics to final handover, our technicians follow strict protocols, use genuine spare parts, and document every step to guarantee traceability and accountability.</p>
+                <p data-i18n="quality.p1">At Andaleeb Industrial, quality is not just a process — it is a mindset embedded in every level of our organization. Our Quality Assurance framework ensures that every service we deliver meets the highest standards of safety, reliability, and performance.</p>
+                <p data-i18n="quality.p2">From initial diagnostics to final handover, our technicians follow strict protocols, use genuine spare parts, and document every step to guarantee traceability and accountability.</p>
                 <ul class="quality-list">
-                    <li><i class="fas fa-award"></i><span>Certified Technicians & Engineers</span></li>
-                    <li><i class="fas fa-clipboard-check"></i><span>Standardized Work Procedures</span></li>
-                    <li><i class="fas fa-cogs"></i><span>Genuine Parts & Materials Only</span></li>
-                    <li><i class="fas fa-chart-line"></i><span>Continuous Improvement Culture</span></li>
-                    <li><i class="fas fa-user-shield"></i><span>Strict Safety Compliance</span></li>
+                    <li><i class="fas fa-award"></i><span data-i18n="quality.li1">Certified Technicians & Engineers</span></li>
+                    <li><i class="fas fa-clipboard-check"></i><span data-i18n="quality.li2">Standardized Work Procedures</span></li>
+                    <li><i class="fas fa-cogs"></i><span data-i18n="quality.li3">Genuine Parts & Materials Only</span></li>
+                    <li><i class="fas fa-chart-line"></i><span data-i18n="quality.li4">Continuous Improvement Culture</span></li>
+                    <li><i class="fas fa-user-shield"></i><span data-i18n="quality.li5">Strict Safety Compliance</span></li>
                 </ul>
             </div>
         </div>
@@ -313,23 +317,23 @@
     <section class="gallery section-padding" id="gallery">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Project Gallery</h2>
+                <h2 data-i18n="gallery.title">Project Gallery</h2>
                 <div class="section-line" style="background:linear-gradient(90deg, var(--secondary), var(--accent));"></div>
-                <p>Real-world solutions delivered across Saudi Arabia</p>
+                <p data-i18n="gallery.subtitle">Real-world solutions delivered across Saudi Arabia</p>
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-up">
                     <img src="assets/images/gallery-thermo-king-installation.png" alt="Thermo King Installation">
                     <div class="gallery-overlay">
-                        <h4>Thermo King Unit Installation</h4>
-                        <p>Professional mounting and commissioning of Thermo King refrigeration units for heavy-duty transport fleets.</p>
+                        <h4 data-i18n="gallery.item1Title">Thermo King Unit Installation</h4>
+                        <p data-i18n="gallery.item1Text">Professional mounting and commissioning of Thermo King refrigeration units for heavy-duty transport fleets.</p>
                     </div>
                 </div>
                 <div class="gallery-item fade-up delay-1">
                     <img src="assets/images/gallery-carrier-refrigeration-unit.png" alt="Carrier Refrigeration Unit">
                     <div class="gallery-overlay">
-                        <h4>Carrier Unit Overhaul</h4>
-                        <p>Complete diagnostics, compressor replacement, and performance testing for Carrier industrial cooling systems.</p>
+                        <h4 data-i18n="gallery.item2Title">Carrier Unit Overhaul</h4>
+                        <p data-i18n="gallery.item2Text">Complete diagnostics, compressor replacement, and performance testing for Carrier industrial cooling systems.</p>
                     </div>
                 </div>
             </div>
@@ -340,46 +344,46 @@
     <section class="team section-padding" id="team">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our Management Team</h2>
+                <h2 data-i18n="team.title">Our Management Team</h2>
                 <div class="section-line"></div>
-                <p>Dedicated leadership committed to delivering reliable refrigeration and cooling solutions</p>
+                <p data-i18n="team.subtitle">Dedicated leadership committed to delivering reliable refrigeration and cooling solutions</p>
             </div>
             <div class="team-grid">
                 <div class="team-card fade-up">
                     <div class="team-avatar"><img src="assets/images/team-alauddin.jpg" alt="Alauddin"></div>
                     <h3>Alauddin</h3>
-                    <div class="role">Owner & Founder</div>
-                    <div class="branch">Head Office</div>
+                    <div class="role" data-i18n="team.roleOwner">Owner & Founder</div>
+                    <div class="branch" data-i18n="team.branchHQ">Head Office</div>
                 </div>
                 <div class="team-card fade-up delay-1">
                     <div class="team-avatar"><img src="assets/images/team-zainuddin.jpg" alt="Zainuddin"></div>
                     <h3>Zainuddin</h3>
-                    <div class="role">Chief Executive Officer</div>
-                    <div class="branch">Head Office</div>
+                    <div class="role" data-i18n="team.roleCEO">Chief Executive Officer</div>
+                    <div class="branch" data-i18n="team.branchHQ">Head Office</div>
                 </div>
                 <div class="team-card fade-up delay-2">
                     <div class="team-avatar"><img src="assets/images/team-ikramuddin.jpg" alt="Ikramuddin"></div>
                     <h3>Ikramuddin</h3>
-                    <div class="role">General Manager</div>
-                    <div class="branch">Head Office</div>
+                    <div class="role" data-i18n="team.roleGM">General Manager</div>
+                    <div class="branch" data-i18n="team.branchHQ">Head Office</div>
                 </div>
                 <div class="team-card fade-up">
                     <div class="team-avatar"><img src="assets/images/team-islahuddin.jpg" alt="Islahuddin"></div>
                     <h3>Islahuddin</h3>
-                    <div class="role">Branch Manager</div>
-                    <div class="branch">Riyadh - Branch 2</div>
+                    <div class="role" data-i18n="team.roleBM">Branch Manager</div>
+                    <div class="branch" data-i18n="team.branchRiyadh">Riyadh - Branch 2</div>
                 </div>
                 <div class="team-card fade-up delay-1">
                     <div class="team-avatar"><img src="assets/images/team-waseem.jpg" alt="Er. Waseem"></div>
                     <h3>Er. Waseem</h3>
-                    <div class="role">Branch Manager</div>
-                    <div class="branch">Dammam - Branch 3</div>
+                    <div class="role" data-i18n="team.roleBM">Branch Manager</div>
+                    <div class="branch" data-i18n="team.branchDammam">Dammam - Branch 3</div>
                 </div>
                 <div class="team-card fade-up delay-2">
                     <div class="team-avatar"><img src="assets/images/team-usman.jpg" alt="Usman"></div>
                     <h3>Usman</h3>
-                    <div class="role">Supervisor</div>
-                    <div class="branch">Dammam - Branch 3</div>
+                    <div class="role" data-i18n="team.roleSupervisor">Supervisor</div>
+                    <div class="branch" data-i18n="team.branchDammam">Dammam - Branch 3</div>
                 </div>
             </div>
             <div class="team-photo-main fade-up">
@@ -392,40 +396,40 @@
     <section class="branches section-padding" id="branches">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our Branches</h2>
+                <h2 data-i18n="branches.title">Our Branches</h2>
                 <div class="section-line"></div>
-                <p>Three strategically located branches serving clients across the Kingdom</p>
+                <p data-i18n="branches.subtitle">Three strategically located branches serving clients across the Kingdom</p>
             </div>
             <div class="branches-grid">
                 <div class="branch-card fade-up">
                     <div class="branch-icon"><i class="fas fa-building"></i></div>
-                    <h3>Head Office</h3>
-                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> 282 – Musa Saniyah, RLSB4696, Wadi Tanatin, Al-Aziziyah, Riyadh, Saudi Arabia – 14431</p>
-                    <a class="branch-map-link" href="https://www.google.com/maps?q=24.584057,46.739606" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> View on Google Maps</a>
+                    <h3 data-i18n="branch1.name">Head Office</h3>
+                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> <span data-i18n="branch1.address">282 – Musa Saniyah, RLSB4696, Wadi Tanatin, Al-Aziziyah, Riyadh, Saudi Arabia – 14431</span></p>
+                    <a class="branch-map-link" href="https://www.google.com/maps?q=24.584057,46.739606" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> <span data-i18n="branch.maplink">View on Google Maps</span></a>
                     <div class="branch-contacts">
-                        <h4><i class="fas fa-phone-alt"></i> Contact Persons</h4>
+                        <h4><i class="fas fa-phone-alt"></i> <span data-i18n="branch.contactPersons">Contact Persons</span></h4>
                         <p>Alauddin: <a href="tel:+966534142413">+966 53 414 2413</a></p>
                         <p>Zainuddin: <a href="tel:+966570797399">+966 57 079 7399</a></p>
                     </div>
                 </div>
                 <div class="branch-card fade-up delay-1">
                     <div class="branch-icon"><i class="fas fa-building"></i></div>
-                    <h3>Branch 2 – Riyadh</h3>
-                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> Al-Masani, Lulu Saniyah, Al-Aziziyah, Riyadh, Saudi Arabia – 14714</p>
-                    <a class="branch-map-link" href="https://www.google.com/maps?q=24.576059,46.746140" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> View on Google Maps</a>
+                    <h3 data-i18n="branch2.name">Branch 2 – Riyadh</h3>
+                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> <span data-i18n="branch2.address">Al-Masani, Lulu Saniyah, Al-Aziziyah, Riyadh, Saudi Arabia – 14714</span></p>
+                    <a class="branch-map-link" href="https://www.google.com/maps?q=24.576059,46.746140" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> <span data-i18n="branch.maplink">View on Google Maps</span></a>
                     <div class="branch-contacts">
-                        <h4><i class="fas fa-phone-alt"></i> Contact Persons</h4>
+                        <h4><i class="fas fa-phone-alt"></i> <span data-i18n="branch.contactPersons">Contact Persons</span></h4>
                         <p>Islahuddin: <a href="tel:+966509089947">+966 50 908 9947</a></p>
                         <p>Ikramuddin: <a href="tel:+966554897967">+966 55 489 7967</a></p>
                     </div>
                 </div>
                 <div class="branch-card fade-up delay-2">
                     <div class="branch-icon"><i class="fas fa-building"></i></div>
-                    <h3>Branch 3 – Dammam</h3>
-                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> C2XP+F88, Dallah Industrial, Dammam, Saudi Arabia</p>
-                    <a class="branch-map-link" href="https://www.google.com/maps?q=26.4488,50.0357" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> View on Google Maps</a>
+                    <h3 data-i18n="branch3.name">Branch 3 – Dammam</h3>
+                    <p class="branch-address"><i class="fas fa-map-marker-alt"></i> <span data-i18n="branch3.address">C2XP+F88, Dallah Industrial, Dammam, Saudi Arabia</span></p>
+                    <a class="branch-map-link" href="https://www.google.com/maps?q=26.4488,50.0357" target="_blank" rel="noopener"><i class="fas fa-location-arrow"></i> <span data-i18n="branch.maplink">View on Google Maps</span></a>
                     <div class="branch-contacts">
-                        <h4><i class="fas fa-phone-alt"></i> Contact Persons</h4>
+                        <h4><i class="fas fa-phone-alt"></i> <span data-i18n="branch.contactPersons">Contact Persons</span></h4>
                         <p>Er. Waseem: <a href="tel:+966560610902">+966 56 061 0902</a></p>
                         <p>Usman: <a href="tel:+966538664005">+966 53 866 4005</a></p>
                     </div>
@@ -438,9 +442,9 @@
     <section class="clients section-padding" id="clients">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Our Valued Clients</h2>
+                <h2 data-i18n="clients.title">Our Valued Clients</h2>
                 <div class="section-line"></div>
-                <p>Trusted by leading businesses across food, logistics, fisheries, and transportation industries</p>
+                <p data-i18n="clients.subtitle">Trusted by leading businesses across food, logistics, fisheries, and transportation industries</p>
             </div>
             <div class="clients-grid">
                 <div class="client-card fade-up">
@@ -461,7 +465,7 @@
                 </div>
                 <div class="client-card fade-up">
                     <div class="client-icon"><i class="fas fa-car"></i></div>
-                    <h4>Car Rent</h4>
+                    <h4 data-i18n="clients.carRent">Car Rent</h4>
                 </div>
                 <div class="client-card fade-up delay-1">
                     <div class="client-logo"><img src="assets/images/client-pure-ice.png" alt="Pure Ice Company"></div>
@@ -497,7 +501,7 @@
                 </div>
                 <div class="client-card fade-up delay-1">
                     <div class="client-icon"><i class="fas fa-handshake"></i></div>
-                    <h4>And Many More...</h4>
+                    <h4 data-i18n="clients.andMore">And Many More...</h4>
                 </div>
             </div>
         </div>
@@ -510,47 +514,47 @@
                 <div class="contact-visual fade-left">
                     <img src="assets/images/contact-visual.png" alt="Contact Andaleeb Industrial">
                     <div class="contact-visual-content">
-                        <h3>Let's Work Together</h3>
-                        <p>Need emergency refrigeration support or want to schedule maintenance? Our team is available 24/7 to assist you across all our branches in Saudi Arabia.</p>
+                        <h3 data-i18n="contact.visualTitle">Let's Work Together</h3>
+                        <p data-i18n="contact.visualText">Need emergency refrigeration support or want to schedule maintenance? Our team is available 24/7 to assist you across all our branches in Saudi Arabia.</p>
                         <ul class="contact-info-list">
                             <li><i class="fas fa-envelope"></i> info@andaleeb-industrial.com</li>
                             <li><i class="fas fa-phone"></i> +966 57 079 7399</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Kingdom of Saudi Arabia</li>
-                            <li><i class="fas fa-clock"></i> 24/7 Emergency Support</li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.location">Kingdom of Saudi Arabia</span></li>
+                            <li><i class="fas fa-clock"></i> <span data-i18n="topbar.emergency">24/7 Emergency Support Available</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="contact-form-wrap fade-right">
-                    <h3>Request a Service</h3>
+                    <h3 data-i18n="contact.formTitle">Request a Service</h3>
                     <form id="contactForm" onsubmit="handleFormSubmit(event)">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <label for="name" data-i18n="contact.labelName">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" data-i18n-placeholder="contact.phName" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email" data-i18n="contact.labelEmail">Email Address</label>
                             <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone" data-i18n="contact.labelPhone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" placeholder="+966 57 079 7399">
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Required</label>
+                            <label for="service" data-i18n="contact.labelService">Service Required</label>
                             <select id="service" name="service">
-                                <option value="general">General Inquiry</option>
-                                <option value="repair">Refrigerator Repair</option>
-                                <option value="coldroom">Cold Room Service</option>
-                                <option value="transport">Transport Cooling</option>
-                                <option value="emergency">Emergency Breakdown</option>
-                                <option value="maintenance">Preventive Maintenance</option>
+                                <option value="general" data-i18n="contact.optGeneral">General Inquiry</option>
+                                <option value="repair" data-i18n="contact.optRepair">Refrigerator Repair</option>
+                                <option value="coldroom" data-i18n="contact.optColdroom">Cold Room Service</option>
+                                <option value="transport" data-i18n="contact.optTransport">Transport Cooling</option>
+                                <option value="emergency" data-i18n="contact.optEmergency">Emergency Breakdown</option>
+                                <option value="maintenance" data-i18n="contact.optMaintenance">Preventive Maintenance</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Describe your requirement..." required></textarea>
+                            <label for="message" data-i18n="contact.labelMessage">Message</label>
+                            <textarea id="message" name="message" placeholder="Describe your requirement..." data-i18n-placeholder="contact.phMessage" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Submit Request</button>
+                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> <span data-i18n="contact.submit">Submit Request</span></button>
                     </form>
                 </div>
             </div>
@@ -565,61 +569,62 @@
                     <div class="logo" style="margin-bottom:20px;">
                         <img src="assets/images/logo-white.png" alt="Andaleeb" class="logo-img">
                         <div class="logo-text">
-                            <h1 style="color:var(--white);font-size:16px;">INDUSTRIAL</h1>
-                            <p style="color:rgba(255,255,255,0.5);font-size:10px;">Refrigeration, Cooling & Industrial Services</p>
+                            <h1 style="color:var(--white);font-size:16px;" data-i18n="logo.industrial">INDUSTRIAL</h1>
+                            <p style="color:rgba(255,255,255,0.5);font-size:10px;" data-i18n="logo.tagline">Refrigeration, Cooling & Industrial Services</p>
                         </div>
                     </div>
-                    <p>Andaleeb Industrial Company is your trusted partner for reliable refrigeration and cooling solutions across the Kingdom of Saudi Arabia. From idea to execution, we keep your cold-chain running.</p>
+                    <p data-i18n="footer.about">Andaleeb Industrial Company is your trusted partner for reliable refrigeration and cooling solutions across the Kingdom of Saudi Arabia. From idea to execution, we keep your cold-chain running.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer.quicklinks">Quick Links</h4>
                     <ul>
-                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Project Gallery</a></li>
-                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Management Team</a></li>
-                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.linkAbout">About Us</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.linkServices">Our Services</span></a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.linkGallery">Project Gallery</span></a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.linkTeam">Management Team</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.linkContact">Contact Us</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Our Services</h4>
+                    <h4 data-i18n="footer.ourservices">Our Services</h4>
                     <ul>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Refrigerator Repair</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Cold Room Services</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Transport Refrigeration</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Emergency Breakdown</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Preventive Maintenance</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.svcRepair">Refrigerator Repair</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.svcColdroom">Cold Room Services</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.svcTransport">Transport Refrigeration</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.svcEmergency">Emergency Breakdown</span></a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> <span data-i18n="footer.svcMaintenance">Preventive Maintenance</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Info</h4>
+                    <h4 data-i18n="footer.contactinfo">Contact Info</h4>
                     <div class="footer-contact-item">
                         <i class="fas fa-envelope"></i>
-                        <div><strong>Email</strong><br>info@andaleeb-industrial.com</div>
+                        <div><strong data-i18n="footer.email">Email</strong><br>info@andaleeb-industrial.com</div>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-phone"></i>
-                        <div><strong>Phone</strong><br>+966 57 079 7399</div>
+                        <div><strong data-i18n="footer.phone">Phone</strong><br>+966 57 079 7399</div>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div><strong>Location</strong><br>Kingdom of Saudi Arabia</div>
+                        <div><strong data-i18n="footer.location">Location</strong><br><span data-i18n="contact.location">Kingdom of Saudi Arabia</span></div>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-clock"></i>
-                        <div><strong>Support Hours</strong><br>24/7 Emergency Support Available</div>
+                        <div><strong data-i18n="footer.supportHours">Support Hours</strong><br><span data-i18n="topbar.emergency">24/7 Emergency Support Available</span></div>
                     </div>
-                    <a href="#contact" class="btn-primary" style="margin-top:10px;display:inline-block;"><i class="fas fa-headset"></i> Request Service</a>
+                    <a href="#contact" class="btn-primary" style="margin-top:10px;display:inline-block;"><i class="fas fa-headset"></i> <span data-i18n="footer.requestService">Request Service</span></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2021 - 2026 Andaleeb Industrial Company. All Rights Reserved. | Refrigeration, Cooling & Industrial Services</p>
+                <p data-i18n="footer.copyright">&copy; 2021 - 2026 Andaleeb Industrial Company. All Rights Reserved. | Refrigeration, Cooling & Industrial Services</p>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

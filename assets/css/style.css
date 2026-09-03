@@ -75,6 +75,21 @@
         }
         .top-bar span { display: flex; align-items: center; gap: 8px; }
         .top-bar i { color: var(--secondary); font-size: 12px; }
+        .lang-switch { display: flex; gap: 4px; }
+        .lang-btn {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: rgba(255,255,255,0.7);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover { background: rgba(255,255,255,0.16); color: var(--white); }
+        .lang-btn.active { background: var(--secondary); border-color: var(--secondary); color: var(--white); }
 
         /* HEADER */
         .header {
@@ -1105,6 +1120,7 @@
             .stat-item:nth-child(2)::after { display: none; }
         }
         @media (max-width: 768px) {
+            .topbar-hide-sm { display: none; }
             .nav {
                 display: none;
                 position: absolute;
@@ -1137,4 +1153,22 @@
             .section-padding { padding: 70px 0; }
             .section-header h2 { font-size: 32px; }
             .about-content h2, .intro-content h2, .ceo-content h2, .quality-content h2, .mv-card h3 { font-size: 32px; }
+        }
+
+        /* RTL (Arabic) OVERRIDES */
+        [dir="rtl"] body { font-family: 'Cairo', 'Open Sans', sans-serif; }
+        [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4,
+        [dir="rtl"] .logo-text h1, [dir="rtl"] .nav a, [dir="rtl"] .btn-primary, [dir="rtl"] .btn-outline {
+            font-family: 'Cairo', 'Montserrat', sans-serif;
+        }
+        [dir="rtl"] .btn-outline { margin-left: 0; margin-right: 12px; }
+        [dir="rtl"] .about-feature { border-left: none; border-right: 3px solid var(--secondary); }
+        [dir="rtl"] .ceo-quote { border-left: none; border-right: 4px solid var(--accent); padding-left: 0; padding-right: 24px; }
+        [dir="rtl"] .quality-list li { border-left: none; border-right: 4px solid var(--accent); }
+        [dir="rtl"] .footer-col ul li a:hover { padding-left: 0; padding-right: 4px; }
+        [dir="rtl"] .branch-address i,
+        [dir="rtl"] .about-feature i,
+        [dir="rtl"] .quality-list li i { margin-top: 3px; }
+        @media (max-width: 768px) {
+            [dir="rtl"] .btn-outline { margin-right: 0; }
         }

@@ -101,7 +101,9 @@
         function handleFormSubmit(event) {
             event.preventDefault();
             const form = event.target;
-            alert('Thank you for contacting Andaleeb Industrial Company! We have received your service request and will get back to you shortly.');
+            const lang = document.documentElement.lang || 'en';
+            const dict = (typeof translations !== 'undefined' && translations[lang]) || {};
+            alert(dict['formAlert'] || 'Thank you for contacting Andaleeb Industrial Company! We have received your service request and will get back to you shortly.');
             form.reset();
         }
 
