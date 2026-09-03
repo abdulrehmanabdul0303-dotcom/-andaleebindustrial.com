@@ -765,7 +765,15 @@
             font-weight: 700;
             border: 4px solid var(--ice);
             box-shadow: 0 8px 20px rgba(13,71,161,0.2);
+            overflow: hidden;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
+        .team-avatar img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .team-card:hover .team-avatar {
+            border-color: var(--secondary);
+            box-shadow: 0 12px 30px rgba(0,172,193,0.35);
+        }
+        .team-card:hover .team-avatar img { transform: scale(1.12) rotate(2deg); }
         .team-card h3 { font-size: 18px; color: var(--navy); margin-bottom: 4px; }
         .team-card .role {
             font-size: 13px;
@@ -822,6 +830,59 @@
             font-size: 22px;
         }
         .client-card h4 { font-size: 14px; color: var(--dark); font-weight: 700; line-height: 1.4; }
+
+        /* BRANCHES */
+        .branches { background: var(--light); }
+        .branches-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .branch-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 36px 30px;
+            transition: all 0.3s;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        }
+        .branch-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            border-color: var(--secondary);
+        }
+        .branch-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            color: var(--white);
+            font-size: 24px;
+        }
+        .branch-card h3 { font-size: 19px; color: var(--navy); margin-bottom: 12px; }
+        .branch-address {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 22px;
+            display: flex;
+            gap: 8px;
+        }
+        .branch-address i { color: var(--secondary); margin-top: 3px; flex-shrink: 0; }
+        .branch-contacts { border-top: 1px solid var(--border); padding-top: 18px; }
+        .branch-contacts h4 {
+            font-size: 12px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .branch-contacts p { font-size: 14px; color: var(--dark); margin-bottom: 6px; }
+        .branch-contacts a { color: var(--primary); font-weight: 600; }
+        .branch-contacts a:hover { color: var(--secondary); }
 
         /* CONTACT */
         .contact { background: var(--light); }
@@ -1019,6 +1080,7 @@
             .culture-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto 40px; }
             .gallery-grid { grid-template-columns: 1fr; }
             .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .branches-grid { grid-template-columns: 1fr; }
             .clients-grid { grid-template-columns: repeat(2, 1fr); }
             .footer-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-inner { grid-template-columns: repeat(2, 1fr); }
