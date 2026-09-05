@@ -1169,6 +1169,7 @@
         [dir="rtl"] .branch-address i,
         [dir="rtl"] .about-feature i,
         [dir="rtl"] .quality-list li i { margin-top: 3px; }
+        .phone-num { direction: ltr; unicode-bidi: isolate; display: inline-block; }
         @media (max-width: 768px) {
             [dir="rtl"] .btn-outline { margin-right: 0; }
         }
